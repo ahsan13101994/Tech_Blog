@@ -36,7 +36,7 @@ const signupFormHandler = async (event) => {
     if (response.ok) {
       document.location.replace('/');
     } else {
-      alert('Failed to sign up.');
+      alert('Failed to sign up. Password needs upper, lower ,numeric and unique value');
     }
   }
 };
