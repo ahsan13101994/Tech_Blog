@@ -1,9 +1,7 @@
- <div class="text-center">
-  <h2>{{post.post_title}}</h2>
-  <p>{{post.post_content}}</p>
-  <p>Created by {{user.username}} </p>
-  <p>
-    <button class="btn btn-primary">Edit Post</button>
-    <button class="btn btn-primary">Delete Post</button>
-  </p>
-</div>
+<ul class="post-list">
+    {{#each posts as |post|}}
+    <li>
+        {{> post-details }}
+    </li>
+    {{/each}}
+</ul>
