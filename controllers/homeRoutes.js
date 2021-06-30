@@ -2,7 +2,7 @@ const router = require('express').Router();
 const { User, Post, Comment } = require('../models');
 const withAuth = require('../utils/auth');
 
-router.get('/', withAuth, async (req, res) => {
+router.get('/',withAuth, async (req, res) => {
     try {
       const postData = await Post.findAll({
         include: [{model:Comment}],
@@ -11,7 +11,7 @@ router.get('/', withAuth, async (req, res) => {
 
     res.render('homepage', {
       posts,
-    loggedIn: req.session.loggedIn,
+    loggedIn: req.session.logged_in,
     });
   } catch (err) {
     res.status(500).json(err);

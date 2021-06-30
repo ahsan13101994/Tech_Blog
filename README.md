@@ -39,7 +39,13 @@ To install, on Command line use: npm install
 use the command: npm run seeds - To populate data
 use the command: npm server - To start local host 
 
+## Support
 
+If you have any questions, or open issues about the repo, I can be reached at: 
+
+Email: ahsan.ali0307@gmail.com 
+
+GitHub: @ahsan13101994.
 
 
 
