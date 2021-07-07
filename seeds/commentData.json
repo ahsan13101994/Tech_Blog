@@ -1,0 +1,28 @@
+[
+    {
+        "user_id": "4",
+        "post_id": "1",
+        "comment_text": "Modern Farmhouse 300 Years Old? Amazing"
+
+    },
+    {
+        "user_id": "1",
+        "post_id": "3",
+        "comment_text": "Nuclear-Powered Superyacht."
+    },
+    {
+        "user_id": "4",
+        "post_id": "2",
+        "comment_text": "Great Read"
+    },
+    {
+        "user_id": "4",
+        "post_id": "4",
+        "comment_text": "I loved the show"
+    },
+    {
+        "user_id": "1",
+        "post_id": "4",
+        "comment_text": "The show got me planning my next trip"
+    }
+]

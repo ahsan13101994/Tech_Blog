@@ -1,8 +1,11 @@
-const { Model, DataTypes } = require('sequelize');
-const sequelize = require('../config/connection');
+// set up imports
+const { Model, DataTypes } = require("sequelize");
+const sequelize = require("../config/connection");
 
-class Post extends Model { }
+//set up the post object
+class Post extends Model {}
 
+//set up the init function
 Post.init(
   {
     id: {
@@ -15,31 +18,25 @@ Post.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    date: {
-        type: DataTypes.DATEONLY,
-        allowNull: false,
-        defaultValue: DataTypes.NOW
-    },
-    content: {
-      type: DataTypes.TEXT,
+    body: {
+      type: DataTypes.STRING,
       allowNull: false,
     },
+    // Add the reference to the user id that made it
     user_id: {
-        type: DataTypes.INTEGER,
-        allowNull: false,
-        references: {
-            model: 'user',
-            key: 'id'
-        }
+      type: DataTypes.INTEGER,
+      references: {
+        model: "user",
+        key: "id",
+      },
     },
   },
   {
     sequelize,
-    timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'post',
+    modelName: "post",
   }
 );
-
+//export the post object
 module.exports = Post;

@@ -163,32 +163,38 @@
       flex-direction: column;
   }
 
-  #new-destination {
 
-  }
 
-  .login {
-    float: right;
+/* Post card styling */
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  padding: 20px;
+}
+.card h3 {
+  display: inline;
+}
+.card h4 {
+  display: inline;
+  align-content: right;
 }
 
-.page-holder {
-    min-height: 100vh;
+/* General */
+.padding-20 {
+  padding: 20;
 }
 
-.bg-cover {
-    background-size: cover !important;
+.single-post-padding {
+  padding: 50px;
 }
 
-a {
-    text-decoration: none !important;
+.post-text-padding {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
-.desButton {
-  width: 30%;
-  height: 50px;
-  font-size: 20px;
-}
-
-.navbar {
-    padding-left: 10px;
+#comment-form {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }

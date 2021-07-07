@@ -1,39 +1,6 @@
-<section class="row">
-  <div class = "column">
-    <h2>Create New Post</h2>
-
-    <form class="new-post-form">
-      <div>
-        <label for="post-title">Title</label>
-        <input type="text" id="post-title" name="post-title" />
-      </div>
-      <div>
-        <label for="post-text">Text</label>
-        <textarea id="post-text" name="post-text"></textarea>
-      </div>
-      <button type="submit" class="btn">Create</button>
-    </form>
-  </div>
-  <div class = "column">
-    <h2>About Me</h2>
-    {{> user-info}}
-  </div>
-
-</section>
-
-{{#if posts.length}}
-<section>
-  <h2>Your Posts</h2>
-  <ol>
-    {{#each posts as |post|}}
-    <li>
-      {{> post-info post}}
-      <a href="/dashboard/edit/{{post.id}}" class="edit-link">Edit post</a>
-    </li>
-    {{/each}}
-  </ol>
-</section>
-{{/if}}
-
-<!--Script to add a post-->
-<script src="/js/add-post.js"></script>
+<h1 class="padding-20">My Posts</h1>
+<p><a class="link" href="/post">New Post</a></p>
+{{#each posts as |aPost| }}
+{{!-- Pass in the data to each individual post --}}
+{{> post aPost}}
+{{/each}}
