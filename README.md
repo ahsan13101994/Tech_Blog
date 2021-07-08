@@ -6,9 +6,8 @@ This CMS-style blog site can publish articles, blog posts, and comments.
 
 DEMO LINK: 
 
-![Demo DB 1]
+![Live]:(./images/dashboard.PNG)
 
-![DEMO DB 2]
 
 ## Useage
 
