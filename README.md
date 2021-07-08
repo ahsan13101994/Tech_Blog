@@ -4,9 +4,9 @@
 
 This CMS-style blog site can publish articles, blog posts, and comments.
 
-DEMO LINK: 
+DEMO LINK: https://sartechblog.herokuapp.com/
 
-![Live]:(./images/dashboard.PNG)
+![Live]: (../images/dashboard.PNG)
 
 
 ## Useage
