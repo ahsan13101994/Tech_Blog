@@ -6,7 +6,7 @@ This CMS-style blog site can publish articles, blog posts, and comments.
 
 DEMO LINK: https://sartechblog.herokuapp.com/
 
-![Live](.\images\dashboard.PNG)
+![Live](public\images\dashboard.PNG)
 
 
 ## Useage
