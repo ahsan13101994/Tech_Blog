@@ -4,10 +4,10 @@
     <div class="container">
         <p id="post-body" class="post-text post-text-padding">{{post.body}}</p>
     </div>
-    {{!-- If this is my post i can edit and delete it --}}
+    
     {{#if currentUser}}
-    <button id="edit-btn">Edit</button>
-    <button id="delete-btn">Delete</button>
+    <button class="edit-btn" id="edit-btn">Edit</button>
+    <button class="edit-btn" id="delete-btn">Delete</button>
     {{/if}}
 </div>
 {{!-- Add Comment --}}
@@ -15,10 +15,10 @@
     <form id="comment-form " class="padding-20">
         <label for="comment-text">Leave A Comment</label>
         <input class="padding-20" type="textarea" name="comment-text" id="comment-text">
-        <button class="padding-20" id="post-comment-btn">Post!</button>
+        <button class="postbtn" id="post-comment-btn">Post!</button>
     </form>
 </div>
-{{!-- Handle the comments --}}
+{{!-- All comments --}}
 {{#each post.comments as |aComment|}}
 {{> comment aComment}}
 {{/each}}

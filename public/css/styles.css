@@ -38,6 +38,7 @@
     padding: .5%;
     border-radius: 5px;
     border: 1px solid #ccc;
+    width: 100%;
   }
   
   textarea:focus, input:focus {
@@ -121,6 +122,10 @@
     display: block;
     margin: -1.5% 0 2% 0;
   }
+
+  .edit-btn{
+    border: 1px solid #ccc;
+  }
   
   .comment-form {
     margin-bottom: 5%;
@@ -180,13 +185,29 @@
   align-content: right;
 }
 
+.card h5 {
+  display: inline;
+  font-size: small;
+  font-weight: 100;
+}
+
 /* General */
 .padding-20 {
   padding: 20;
 }
 
+.postbtn {
+  margin-top: 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
 .single-post-padding {
   padding: 50px;
+}
+.post-text {
+  color: #333;
+  font-weight: 400;
 }
 
 .post-text-padding {
