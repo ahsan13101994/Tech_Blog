@@ -51,8 +51,6 @@ router.get("/:id", (req, res) => {
 
 //add post
 router.post("/", (req, res) => {
-  // This will make a new post
-  // Expects Title, body, user_id
   Post.create({
     title: req.body.title,
     body: req.body.body,
@@ -63,7 +61,7 @@ router.post("/", (req, res) => {
     })
     .catch((err) => {
       console.log(err);
-      res.status(500).json(err); //REST api needs status
+      res.status(500).json(err); 
     });
 });
 //update post

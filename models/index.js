@@ -1,5 +1,3 @@
-// This is where we will set up relationships for the models
-// Import all the models
 const User = require("./User");
 const Post = require("./Post");
 const Comment = require("./Comment");
@@ -11,7 +9,7 @@ User.hasMany(Post, {
 Post.belongsTo(User, {
   foreignKey: "user_id",
 });
-//associations for the commments
+
 Comment.belongsTo(User, {
   foreignKey: "user_id",
 });

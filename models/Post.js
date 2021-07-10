@@ -1,11 +1,8 @@
-// set up imports
 const { Model, DataTypes } = require("sequelize");
 const sequelize = require("../config/connection");
 
-//set up the post object
 class Post extends Model {}
 
-//set up the init function
 Post.init(
   {
     id: {
@@ -22,7 +19,6 @@ Post.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    // Add the reference to the user id that made it
     user_id: {
       type: DataTypes.INTEGER,
       references: {
@@ -38,5 +34,5 @@ Post.init(
     modelName: "post",
   }
 );
-//export the post object
+
 module.exports = Post;
